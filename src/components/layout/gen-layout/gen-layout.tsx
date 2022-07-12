@@ -1,4 +1,4 @@
-import { BodyText } from '@components/ui/typography';
+import { BodyText, SmallText } from '@components/ui/typography';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { PropsWithChildren } from 'react';
@@ -18,6 +18,9 @@ const GenLayout: React.FC<PropsWithChildren<GenLayoutProps>> = ({ children }) =>
         </div>
       </Link>
       {children}
+      <div className="bottom">
+        <SmallText className="smaller">© Mid_redux | 2022</SmallText>
+      </div>
     </GenLayoutSC>
   );
 };

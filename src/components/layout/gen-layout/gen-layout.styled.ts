@@ -5,8 +5,21 @@ export const GenLayoutSC = styled.main`
   height: auto;
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
   background: ${({ theme }) => theme.colors.white};
+  height: 100vh;
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    p {
+      font-size: 10px;
+    }
+  }
   .top {
     padding-left: 30px;
     height: 70px;

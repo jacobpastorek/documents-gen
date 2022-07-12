@@ -11,22 +11,16 @@ const Gen: React.FC = () => {
       <Link href="/creation">
         <section className="section__left">
           <div>
-            <PlusIcon />
             <H2>
-              Tvorba
-              <br />
-              <span>Dokumentov</span>
+              Tvorba<span> Dokumentov</span>
             </H2>
           </div>
         </section>
       </Link>
       <section className="section__right">
         <div>
-          <DatabaseIcon />
           <H2>
-            Výber z
-            <br />
-            <span>Dokumentov</span>
+            Výber<span> z Dokumentov</span>
           </H2>
         </div>
       </section>

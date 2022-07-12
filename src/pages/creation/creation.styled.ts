@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components';
 export const CreationSC = styled.main`
   display: flex;
   height: calc(100vh - 70px);
-  justify-content: center;
+  padding-top: 50px;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   h2 {

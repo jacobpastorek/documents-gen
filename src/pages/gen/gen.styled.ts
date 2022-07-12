@@ -20,19 +20,13 @@ export const GenSC = styled.main`
     justify-content: center;
     width: calc(100% - 100px);
     max-width: 500px;
-    height: 200px;
+    height: 100px;
     margin: 50px;
     cursor: pointer;
     border: 1px solid ${({ theme }) => theme.colors.primary};
     &:hover {
       background: ${({ theme }) => theme.colors.primary};
       div {
-        svg {
-          path,
-          ellipse {
-            stroke: ${({ theme }) => theme.colors.white};
-          }
-        }
         h2 {
           color: ${({ theme }) => theme.colors.white};
         }
@@ -41,14 +35,6 @@ export const GenSC = styled.main`
     div {
       display: flex;
       align-items: center;
-      svg {
-        width: 60px;
-        height: 60px;
-        path,
-        ellipse {
-          stroke: ${({ theme }) => theme.colors.primary};
-        }
-      }
       h2 {
         font-size: 24px;
         margin-left: 15px;
@@ -62,13 +48,9 @@ export const GenSC = styled.main`
 
     @media (max-width: ${({ theme }) => theme.breakPoints.xl}px) {
       max-width: 500px;
-      height: 100px;
+      height: 60px;
       margin: 10px;
       div {
-        svg {
-          width: 40px;
-          height: 40px;
-        }
         h2 {
           font-size: 20px;
           margin-left: 15px;

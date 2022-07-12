@@ -146,7 +146,12 @@ const Attorney = () => {
   return (
     <AttorneyWrapSC>
       <AttorneyViewSC>
-        <PDFViewer height="100%" width="100%" showToolbar={false} style={{ border: 'none' }}>
+        <PDFViewer
+          height="100%"
+          width="100%"
+          showToolbar={false}
+          style={{ border: 'none', backgroundColor: '#222222' }}
+        >
           {Splnomocnenie}
         </PDFViewer>
       </AttorneyViewSC>
