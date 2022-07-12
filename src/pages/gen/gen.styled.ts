@@ -25,7 +25,18 @@ export const GenSC = styled.main`
     cursor: pointer;
     border: 1px solid ${({ theme }) => theme.colors.primary};
     &:hover {
-      border: 2px dashed ${({ theme }) => theme.colors.primary};
+      background: ${({ theme }) => theme.colors.primary};
+      div {
+        svg {
+          path,
+          ellipse {
+            stroke: ${({ theme }) => theme.colors.white};
+          }
+        }
+        h2 {
+          color: ${({ theme }) => theme.colors.white};
+        }
+      }
     }
     div {
       display: flex;
@@ -39,6 +50,7 @@ export const GenSC = styled.main`
         }
       }
       h2 {
+        font-size: 24px;
         margin-left: 15px;
         font-weight: bold;
         color: ${({ theme }) => theme.colors.primary};
@@ -54,8 +66,8 @@ export const GenSC = styled.main`
       margin: 10px;
       div {
         svg {
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
         }
         h2 {
           font-size: 20px;

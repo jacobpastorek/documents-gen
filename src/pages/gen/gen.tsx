@@ -8,8 +8,8 @@ import Link from 'next/link';
 const Gen: React.FC = () => {
   return (
     <GenSC>
-      <section className="section__left">
-        <Link href="/creation">
+      <Link href="/creation">
+        <section className="section__left">
           <div>
             <PlusIcon />
             <H2>
@@ -18,8 +18,8 @@ const Gen: React.FC = () => {
               <span>Dokumentov</span>
             </H2>
           </div>
-        </Link>
-      </section>
+        </section>
+      </Link>
       <section className="section__right">
         <div>
           <DatabaseIcon />

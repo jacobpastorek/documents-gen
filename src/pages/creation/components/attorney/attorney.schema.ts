@@ -1,41 +1,62 @@
 import { StyleSheet, Font } from '@react-pdf/renderer';
 
-export interface IAttorneyProps {
-  firstPersonName: string;
-  firstPersonBirthNum: string;
-  firstPersonBirthDate: string;
-  firstPersonAddress: string;
-  firstPersonOP: string;
-  secondPersonName: string;
-  secondPersonBirthNum: string;
-  secondPersonBirthDate: string;
-  secondPersonAddress: string;
-  secondPersonOP: string;
-  carCategory: string;
-  carType: string;
-  carEngineNum: string;
-  carVin: string;
-  carPlateNum: string;
-  carColor: string;
+export interface ISplnoPerson {
+  name: string;
+  birthNum: string;
+  birthDate: string;
+  address: string;
+  identificationCard: string;
 }
 
-export const initalState = {
-  firstPersonName: '',
-  firstPersonBirthNum: '',
-  firstPersonBirthDate: '',
-  firstPersonAddress: '',
-  firstPersonOP: '',
-  secondPersonName: '',
-  secondPersonBirthNum: '',
-  secondPersonBirthDate: '',
-  secondPersonAddress: '',
-  secondPersonOP: '',
-  carCategory: '',
-  carType: '',
-  carEngineNum: '',
-  carVin: '',
-  carPlateNum: '',
-  carColor: '',
+export interface ISplnoCar {
+  category: string;
+  type: string;
+  engineNum: string;
+  vin: string;
+  plateNum: string;
+  color: string;
+}
+
+export const personPlaceholder = {
+  name: 'Meno a priezvisko',
+  birthNum: 'Rodné číslo',
+  birthDate: 'Dátum narodenia',
+  address: 'Adresa',
+  identificationCard: 'Občiansky preukaz',
+};
+
+export const carPlaceholder = {
+  category: 'Kategória',
+  type: 'Typ',
+  engineNum: 'Číslo motora',
+  vin: 'Číslo karosérie (VIN)',
+  plateNum: 'ŠPZ',
+  color: 'Farba',
+};
+
+export const initialFirstPerson = {
+  name: '',
+  birthNum: '',
+  birthDate: '',
+  address: '',
+  identificationCard: '',
+};
+
+export const initialSecondPerson = {
+  name: '',
+  birthNum: '',
+  birthDate: '',
+  address: '',
+  identificationCard: '',
+};
+
+export const initialCar = {
+  category: '',
+  type: '',
+  engineNum: '',
+  vin: '',
+  plateNum: '',
+  color: '',
 };
 
 Font.register({

@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
 
   input, textarea{
     font-family: 'Ubuntu', sans-serif;
+    -webkit-appearance: none;
+    outline:none;
+    box-shadow:none ;
   }
 
   a {

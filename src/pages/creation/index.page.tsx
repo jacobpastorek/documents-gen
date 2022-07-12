@@ -1,21 +1,23 @@
+import { BodyText, H2 } from '@components/ui/typography';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
-import Attorney from './components/attorney';
+import Link from 'next/link';
+import { CreationSC } from './creation.styled';
 
 const Creation: NextPage = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
     <>
       <Head>
-        <title>Documents Gen - Splnomocnenie</title>
+        <title>Documents Gen - Tvorba</title>
       </Head>
-      {isClient && <Attorney />}
+      <CreationSC>
+        <H2>Vyberte dokument</H2>
+        <Link href="/creation/splnomocnenie">
+          <div className="doc-link">
+            <BodyText>1. Splnomocnenie</BodyText>
+          </div>
+        </Link>
+      </CreationSC>
     </>
   );
 };
