@@ -9,13 +9,15 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js', 'api.js', 'api.ts'],
   assetPrefix: isProd ? '/documents-gen' : '',
-  basePath: '/documents-gen',
+  basePath: isProd ? '/documents-gen' : '',
   reactStrictMode: true,
   optimizeFonts: true,
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
+  images: isProd
+    ? {
+        loader: 'akamai',
+        path: '',
+      }
+    : {},
   compiler: {
     styledComponents: true,
     removeConsole: {

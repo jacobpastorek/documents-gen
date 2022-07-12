@@ -35,7 +35,12 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`} />
+          <link
+            rel="icon"
+            href={`${
+              process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_FAVICON : ''
+            }/favicon.ico`}
+          />
         </Head>
         <body>
           <Main />

@@ -132,16 +132,18 @@ const Attorney = () => {
       </AttorneyViewSC>
       <AttorneyEditSC>
         <>
-          {Object.keys(doc).map((item: string) => {
-            return (
-              <input
-                key={item}
-                value={doc[item as keyof IAttorneyProps]}
-                placeholder={item}
-                onChange={(e) => handleChange(item, e.target.value)}
-              />
-            );
-          })}
+          <div className="input-wrap">
+            {Object.keys(doc).map((item: string) => {
+              return (
+                <input
+                  key={item}
+                  value={doc[item as keyof IAttorneyProps]}
+                  placeholder={item}
+                  onChange={(e) => handleChange(item, e.target.value)}
+                />
+              );
+            })}
+          </div>
 
           <a
             href={instance.url ? instance.url : ''}
