@@ -2,16 +2,17 @@ import styled, { css } from 'styled-components';
 
 export const GenSC = styled.main`
   display: flex;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 110px);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
   @media (max-width: ${({ theme }) => theme.breakPoints.xl}px) {
+    width: 100%;
+    max-height: calc(100vh - 110px);
     padding-top: 50px;
     justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
   }
   section {
     display: flex;
@@ -52,7 +53,7 @@ export const GenSC = styled.main`
       margin: 10px;
       div {
         h2 {
-          font-size: 20px;
+          font-size: 16px;
           margin-left: 15px;
           font-weight: bold;
           color: ${({ theme }) => theme.colors.primary};

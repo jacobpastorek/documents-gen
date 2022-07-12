@@ -6,22 +6,22 @@ export const GenLayoutSC = styled.main`
   margin: 0 auto;
   padding: 0;
   background: ${({ theme }) => theme.colors.white};
-  height: 100vh;
+
   .bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 40px;
-    position: absolute;
     bottom: 0px;
-    text-align: center;
+    background: ${({ theme }) => theme.colors.primary};
     p {
+      color: ${({ theme }) => theme.colors.white};
       font-size: 10px;
     }
   }
   .top {
-    padding-left: 30px;
+    padding-left: 20px;
     height: 70px;
     width: 100%;
     display: flex;
@@ -30,7 +30,8 @@ export const GenLayoutSC = styled.main`
     background: ${({ theme }) => theme.colors.primary};
     p {
       color: ${({ theme }) => theme.colors.white};
-      margin-left: 20px;
+      margin-left: 10px;
+      font-size: 16px;
       span {
         font-weight: 300;
       }

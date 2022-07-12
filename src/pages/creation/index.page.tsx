@@ -11,7 +11,9 @@ const Creation: NextPage = () => {
         <title>Documents Gen - Tvorba</title>
       </Head>
       <CreationSC>
-        <H2>Vyberte dokument</H2>
+        <H2>
+          Vyberte <span>dokument</span>
+        </H2>
         <Link href="/creation/splnomocnenie">
           <div className="doc-link">
             <BodyText>1. Splnomocnenie</BodyText>

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const AttorneyWrapSC = styled.main`
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 110px);
+  height: 100%;
   display: flex;
 
   @media (max-width: ${({ theme }) => theme.breakPoints.xl}px) {
