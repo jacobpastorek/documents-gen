@@ -95,9 +95,33 @@ export const SaleContractEditSC = styled.section`
   }
 
   .action-wrap {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    button {
+      cursor: pointer;
+      margin: 30px auto 0px auto;
+      padding: 10px 20px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid black;
+      background: ${({ theme }) => theme.colors.primary};
+      max-width: 200px;
+      p {
+        font-weight: bold;
+        font-size: 16px;
+        color: ${({ theme }) => theme.colors.white};
+      }
+      &:hover {
+        background: ${({ theme }) => theme.colors.white};
+        p {
+          color: ${({ theme }) => theme.colors.primary};
+        }
+      }
+    }
     .doc-link {
-      margin: 30px auto 30px auto;
+      width: 100%;
+      margin: 10px auto 30px auto;
       cursor: pointer;
       border: 1px solid black;
       padding: 10px 20px;

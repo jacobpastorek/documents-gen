@@ -26,35 +26,54 @@ const SaleContract = () => {
   const [firstPerson, setFirstPerson] = useState<IKupnaPerson>(initialFirstPerson);
   const [firstCompany, setFirstCompany] = useState<IKupnaCompany>(initialFirstCompany);
 
+  const [temporaryFirstPerson, setTemporaryFirstPerson] = useState<IKupnaPerson>(firstPerson);
+  const [temporaryFirstCompany, setTemporaryFirstCompany] = useState<IKupnaCompany>(firstCompany);
+
   const [secondPerson, setSecondPerson] = useState<IKupnaPerson>(initialSecondPerson);
   const [secondCompany, setSecondCompany] = useState<IKupnaCompany>(initialSecondCompany);
 
+  const [temporarySecondPerson, setTemporarySecondPerson] = useState<IKupnaPerson>(secondPerson);
+  const [temporarySecondCompany, setTemporarySecondCompany] =
+    useState<IKupnaCompany>(secondCompany);
+
   const [car, setCar] = useState<IKupnaCar>(initialCar);
   const [price, setPrice] = useState<IKupnaPrice>(initialPrice);
+
+  const [temporaryPrice, setTemporaryPrice] = useState<IKupnaPrice>(price);
+  const [temporaryCar, setTemporaryCar] = useState<IKupnaCar>(car);
 
   const [isSellerCompany, setIsSellerCompany] = useState(false);
   const [isBuyerCompany, setIsBuyerCompany] = useState(false);
 
   const handleFirstPersonChange = (field: string, value: string) => {
-    setFirstPerson({ ...firstPerson, [field]: value });
+    setTemporaryFirstPerson({ ...temporaryFirstPerson, [field]: value });
   };
   const handleFirstCompanyChange = (field: string, value: string) => {
-    setFirstCompany({ ...firstCompany, [field]: value });
+    setTemporaryFirstCompany({ ...temporaryFirstCompany, [field]: value });
   };
 
   const handleSecondPersonChange = (field: string, value: string) => {
-    setSecondPerson({ ...secondPerson, [field]: value });
+    setTemporarySecondPerson({ ...temporarySecondPerson, [field]: value });
   };
   const handleSecondCompanyChange = (field: string, value: string) => {
-    setSecondCompany({ ...secondCompany, [field]: value });
+    setTemporarySecondCompany({ ...temporarySecondCompany, [field]: value });
   };
 
   const handleCarChange = (field: string, value: string) => {
-    setCar({ ...car, [field]: value });
+    setTemporaryCar({ ...temporaryCar, [field]: value });
   };
 
   const handlePriceChange = (field: string, value: string) => {
-    setPrice({ ...price, [field]: value });
+    setTemporaryPrice({ ...temporaryPrice, [field]: value });
+  };
+
+  const onUpdateClick = () => {
+    setFirstPerson(temporaryFirstPerson);
+    setFirstCompany(temporaryFirstCompany);
+    setSecondPerson(temporarySecondPerson);
+    setSecondCompany(temporarySecondCompany);
+    setPrice(temporaryPrice);
+    setCar(temporaryCar);
   };
 
   const Kupnazmluva = (
@@ -290,7 +309,7 @@ const SaleContract = () => {
 
   useEffect(() => {
     updateInstance();
-  }, [firstPerson, updateInstance]);
+  }, [firstPerson, firstCompany, secondPerson, secondCompany, price, car, updateInstance]);
 
   return (
     <SaleContractWrapSC>
@@ -335,7 +354,7 @@ const SaleContract = () => {
               return (
                 <Input
                   key={item}
-                  value={firstPerson[item as keyof IKupnaPerson]}
+                  value={temporaryFirstPerson[item as keyof IKupnaPerson]}
                   placeholder={personPlaceholder[item as keyof IKupnaPerson]}
                   onChange={(e) => handleFirstPersonChange(item, e.target.value)}
                   className="input-wrap__item"
@@ -353,7 +372,7 @@ const SaleContract = () => {
                   return (
                     <Input
                       key={item}
-                      value={firstCompany[item as keyof IKupnaCompany]}
+                      value={temporaryFirstCompany[item as keyof IKupnaCompany]}
                       placeholder={companyPlaceholder[item as keyof IKupnaCompany]}
                       onChange={(e) => handleFirstCompanyChange(item, e.target.value)}
                       className="input-wrap__item"
@@ -372,7 +391,7 @@ const SaleContract = () => {
               return (
                 <Input
                   key={item}
-                  value={secondPerson[item as keyof IKupnaPerson]}
+                  value={temporarySecondPerson[item as keyof IKupnaPerson]}
                   placeholder={personPlaceholder[item as keyof IKupnaPerson]}
                   onChange={(e) => handleSecondPersonChange(item, e.target.value)}
                   className="input-wrap__item"
@@ -391,7 +410,7 @@ const SaleContract = () => {
                   return (
                     <Input
                       key={item}
-                      value={secondCompany[item as keyof IKupnaCompany]}
+                      value={temporarySecondCompany[item as keyof IKupnaCompany]}
                       placeholder={companyPlaceholder[item as keyof IKupnaCompany]}
                       onChange={(e) => handleSecondCompanyChange(item, e.target.value)}
                       className="input-wrap__item"
@@ -408,7 +427,7 @@ const SaleContract = () => {
               return (
                 <Input
                   key={item}
-                  value={car[item as keyof IKupnaCar]}
+                  value={temporaryCar[item as keyof IKupnaCar]}
                   placeholder={carPlaceholder[item as keyof IKupnaCar]}
                   onChange={(e) => handleCarChange(item, e.target.value)}
                   className="input-wrap__item"
@@ -423,7 +442,7 @@ const SaleContract = () => {
               return (
                 <Input
                   key={item}
-                  value={price[item as keyof IKupnaPrice]}
+                  value={temporaryPrice[item as keyof IKupnaPrice]}
                   placeholder={pricePlaceholder[item as keyof IKupnaPrice]}
                   onChange={(e) => handlePriceChange(item, e.target.value)}
                   className="input-wrap__item"
@@ -433,6 +452,9 @@ const SaleContract = () => {
           </div>
 
           <div className="action-wrap">
+            <button onClick={() => onUpdateClick()}>
+              <BodyText>Náhľad</BodyText>
+            </button>
             <a
               href={instance.url ? instance.url : ''}
               download={`kupna-zmluva-${firstPerson.name}.pdf`}
