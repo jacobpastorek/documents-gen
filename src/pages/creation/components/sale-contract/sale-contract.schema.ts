@@ -101,8 +101,8 @@ Font.register({
   family: 'Roboto-italic',
   src:
     process.env.NODE_ENV === 'production'
-      ? "'/documents-gen/assets/fonts/Roboto-BoldItalic.ttf'"
-      : "'/assets/fonts/Roboto-BoldItalic.ttf'",
+      ? '/documents-gen/assets/fonts/Roboto-BoldItalic.ttf'
+      : '/assets/fonts/Roboto-BoldItalic.ttf',
 });
 
 export const styles = StyleSheet.create({
