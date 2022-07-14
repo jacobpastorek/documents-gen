@@ -124,5 +124,15 @@ export const styles = StyleSheet.create({
   dynamic: {
     fontSize: 12,
     fontFamily: 'Roboto-bold',
+    textDecoration: 'underline',
+    textDecorationStyle: 'dotted',
+    textDecorationThickness: '1px',
+  },
+  transparent: {
+    fontSize: 12,
+    fontFamily: 'Roboto-bold',
+    textDecoration: 'underline',
+    textDecorationStyle: 'dotted',
+    textDecorationThickness: '1px',
   },
 });

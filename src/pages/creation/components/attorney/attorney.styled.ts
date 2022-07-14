@@ -36,19 +36,8 @@ export const AttorneyEditSC = styled.section`
       font-size: 18px;
       font-weight: bold;
     }
-    input {
-      margin-top: 10px;
-      padding: 8px 15px;
-      border-radius: 2px;
-      background: none;
-      width: calc(50% - 5px);
-      border: 1px solid ${({ theme }) => theme.colors.primary};
-      color: ${({ theme }) => theme.colors.primary};
-      font-weight: bold;
-      &::placeholder {
-        color: ${({ theme }) => theme.colors.primary};
-        font-weight: 300;
-      }
+    &__item {
+      width: calc(50% - 10px);
     }
   }
 

@@ -12,12 +12,14 @@ import {
   carPlaceholder,
 } from './attorney.schema';
 import { BodyText, H2 } from '@components/ui/typography';
+import Input from '@components/ui/input';
 
 // Create Document Component
 const Attorney = () => {
   const [firstPerson, setFirstPerson] = useState<ISplnoPerson>(initialFirstPerson);
   const [secondPerson, setSecondPerson] = useState<ISplnoPerson>(initialSecondPerson);
   const [car, setCar] = useState<ISplnoCar>(initialCar);
+  const spacer = <>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</>;
 
   const handleFirstPersonChange = (field: string, value: string) => {
     setFirstPerson({ ...firstPerson, [field]: value });
@@ -37,63 +39,103 @@ const Attorney = () => {
         <Text style={styles.title}>Splnomocnenie</Text>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            Podpísaný (á) .......... <Text style={styles.dynamic}>{firstPerson.name}</Text>{' '}
-            ..........
+            Podpísaný (á){' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {firstPerson.name}
+              {spacer}
+            </Text>
           </Text>
           <Text style={styles.flextext}>
-            Rodné číslo .......... <Text style={styles.dynamic}>{firstPerson.birthNum}</Text>{' '}
-            ..........
+            rodné číslo{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {firstPerson.birthNum}
+              {spacer}
+            </Text>{' '}
           </Text>
         </View>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            Dátum narodenia .......... <Text style={styles.dynamic}>{firstPerson.birthDate}</Text>{' '}
-            ..........
+            dátum narodenia{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {firstPerson.birthDate}
+              {spacer}
+            </Text>{' '}
           </Text>
           <Text style={styles.flextext}>
-            bytom .......... <Text style={styles.dynamic}>{firstPerson.address}</Text> ..........
+            bytom{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {firstPerson.address}
+              {spacer}
+            </Text>
           </Text>
         </View>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            Číslo OP .......... <Text style={styles.dynamic}>{firstPerson.identificationCard}</Text>{' '}
-            ..........
+            číslo OP{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {firstPerson.identificationCard}
+              {spacer}
+            </Text>{' '}
           </Text>
           <Text style={styles.flextext}></Text>
         </View>
-
         <Text style={styles.splittext}>týmto splnomocňujem:</Text>
-
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            Meno a priezvisko .......... <Text style={styles.dynamic}>{secondPerson.name}</Text>{' '}
-            ..........
+            meno a priezvisko{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {secondPerson.name}
+              {spacer}
+            </Text>{' '}
           </Text>
           <Text style={styles.flextext}>
-            Rodné číslo .......... <Text style={styles.dynamic}>{secondPerson.birthNum}</Text>{' '}
-            ..........
+            rodné číslo{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {secondPerson.birthNum}
+              {spacer}
+            </Text>{' '}
           </Text>
         </View>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            Dátum narodenia .......... <Text style={styles.dynamic}>{secondPerson.birthDate}</Text>{' '}
-            ..........
+            dátum narodenia{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {secondPerson.birthDate}
+              {spacer}
+            </Text>{' '}
           </Text>
           <Text style={styles.flextext}>
-            bytom .......... <Text style={styles.dynamic}>{secondPerson.address}</Text> ..........
+            bytom{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {secondPerson.address}
+              {spacer}
+            </Text>
           </Text>
         </View>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            Číslo OP ..........{' '}
-            <Text style={styles.dynamic}>{secondPerson.identificationCard}</Text> ..........
+            číslo OP{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {secondPerson.identificationCard}
+              {spacer}
+            </Text>
           </Text>
           <Text style={styles.flextext}></Text>
         </View>
 
         <Text style={styles.text}>
           <Text style={styles.textbold}>
-            K zriadeniu všetkých potrebných právnych úkonov a zmeny v evidencii na Dopravnom {'\n'}
+            k zriadeniu všetkých potrebných právnych úkonov a zmeny v evidencii na Dopravnom {'\n'}
             inšpektoráte Polície SR
           </Text>{' '}
           (odhláseniu, prihláseniu a iné zmeny vykoonané na uvedenom{'\n'} motorovom vozidle) na
@@ -102,26 +144,56 @@ const Attorney = () => {
 
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            druh .......... <Text style={styles.dynamic}>{car.category}</Text> ..........
+            druh{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {car.category}
+              {spacer}
+            </Text>
           </Text>
           <Text style={styles.flextext}>
-            typ .......... <Text style={styles.dynamic}>{car.type}</Text> ..........
+            typ{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {car.type}
+              {spacer}
+            </Text>
           </Text>
         </View>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            číslo motora .......... <Text style={styles.dynamic}>{car.engineNum}</Text> ..........
+            číslo motora{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {car.engineNum}
+              {spacer}
+            </Text>
           </Text>
           <Text style={styles.flextext}>
-            číslo karosérie .......... <Text style={styles.dynamic}>{car.vin}</Text> ..........
+            číslo karosérie{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {car.vin}
+              {spacer}
+            </Text>
           </Text>
         </View>
         <View style={styles.flexview}>
           <Text style={styles.flextext}>
-            ŠPZ .......... <Text style={styles.dynamic}>{car.plateNum}</Text> ..........
+            ŠPZ{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {car.plateNum}
+              {spacer}
+            </Text>
           </Text>
           <Text style={styles.flextext}>
-            farba.......... <Text style={styles.dynamic}>{car.color}</Text> ..........
+            farba{' '}
+            <Text style={styles.dynamic}>
+              {spacer}
+              {car.color}
+              {spacer}
+            </Text>
           </Text>
         </View>
 
@@ -161,11 +233,12 @@ const Attorney = () => {
             <H2>Údaje osoba 1</H2>
             {Object.keys(firstPerson).map((item: string) => {
               return (
-                <input
+                <Input
                   key={item}
                   value={firstPerson[item as keyof ISplnoPerson]}
                   placeholder={personPlaceholder[item as keyof ISplnoPerson]}
                   onChange={(e) => handleFirstPersonChange(item, e.target.value)}
+                  className="input-wrap__item"
                 />
               );
             })}
@@ -175,11 +248,12 @@ const Attorney = () => {
             <H2>Údaje osoba 2</H2>
             {Object.keys(secondPerson).map((item: string) => {
               return (
-                <input
+                <Input
                   key={item}
                   value={secondPerson[item as keyof ISplnoPerson]}
                   placeholder={personPlaceholder[item as keyof ISplnoPerson]}
                   onChange={(e) => handleSecondPersonChange(item, e.target.value)}
+                  className="input-wrap__item"
                 />
               );
             })}
@@ -189,11 +263,12 @@ const Attorney = () => {
             <H2>Údaje o aute</H2>
             {Object.keys(car).map((item: string) => {
               return (
-                <input
+                <Input
                   key={item}
                   value={car[item as keyof ISplnoCar]}
                   placeholder={carPlaceholder[item as keyof ISplnoCar]}
                   onChange={(e) => handleCarChange(item, e.target.value)}
+                  className="input-wrap__item"
                 />
               );
             })}

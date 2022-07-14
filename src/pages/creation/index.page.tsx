@@ -19,6 +19,11 @@ const Creation: NextPage = () => {
             <BodyText>1. Splnomocnenie</BodyText>
           </div>
         </Link>
+        <Link href="/creation/kupna-zmluva">
+          <div className="doc-link">
+            <BodyText>2. Kúpna zmluva</BodyText>
+          </div>
+        </Link>
       </CreationSC>
     </>
   );
