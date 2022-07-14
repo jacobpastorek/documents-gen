@@ -1,5 +1,4 @@
 import { StyleSheet, Font } from '@react-pdf/renderer';
-
 export interface IKupnaPerson {
   name: string;
   address: string;
@@ -100,7 +99,10 @@ Font.register({
 
 Font.register({
   family: 'Roboto-italic',
-  src: '/assets/fonts/Roboto-BoldItalic.ttf',
+  src:
+    process.env.NODE_ENV === 'production'
+      ? "'/documents-gen/assets/fonts/Roboto-BoldItalic.ttf'"
+      : "'/assets/fonts/Roboto-BoldItalic.ttf'",
 });
 
 export const styles = StyleSheet.create({
