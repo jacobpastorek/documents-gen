@@ -453,7 +453,7 @@ const SaleContract = () => {
 
           <div className="action-wrap">
             <button onClick={() => onUpdateClick()}>
-              <BodyText>Náhľad</BodyText>
+              <BodyText>Aktualizovať</BodyText>
             </button>
             <a
               href={instance.url ? instance.url : ''}
