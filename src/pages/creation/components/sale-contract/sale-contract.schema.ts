@@ -168,7 +168,7 @@ export const styles = StyleSheet.create({
   },
   signatures: {
     fontSize: '12px',
-    paddingTop: 50,
+    paddingTop: 30,
     fontFamily: 'Roboto',
   },
 
