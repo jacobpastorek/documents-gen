@@ -227,15 +227,6 @@ const SaleContract = () => {
           obsluhou predávaného Automobilu, t.j. najmä mu boli poskytnuté informácie týkajúce sa
           užívania a údržby Automobilu.
         </Text>
-        <Text style={styles.textbold}>4.3.</Text>
-        <Text style={styles.textjustified}>
-          Prílohou č. 2 tejto zmluvy a jej neoddeliteľnou súčasťou sú jej Všeobecné obchodné
-          podmienky
-        </Text>
-        <Text style={styles.textbold}>4.4.</Text>
-        <Text style={styles.textjustified}>
-          Prílohou č. 3 tejto zmluvy a jej neoddeliteľnou súčasťou je faktúra.
-        </Text>
         <Text style={styles.splittext}>5. Kúpna cena a platobné podmienky</Text>
         <Text style={styles.textbold}>5.1.</Text>
         <Text style={styles.textjustified}>
@@ -243,7 +234,7 @@ const SaleContract = () => {
           {price.byNumber} EUR s DPH slovom {price.byWord} EUR s DPH.
         </Text>
         <Text style={styles.textbold}>5.2.</Text>
-        <Text style={styles.textjustified}>Kúpna cena bude zaplatená v hotovosti.</Text>
+        <Text style={styles.textjustified}>Kúpna cena bude zaplatená v hotovosti alebo prevodom na bankový účet.</Text>
         <Text style={styles.textbold}>5.3.</Text>
         <Text style={styles.textjustified}>
           Kupujúci nadobúda vlastnícke právo k Automobilu okamihom zaplatenia kúpnej ceny,
