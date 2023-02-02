@@ -120,7 +120,7 @@ const SaleContract = () => {
         </View>
         <Text style={styles.splittext}>1. Úvodné ustanovenia</Text>
         <Text style={styles.textbold}>1.1.</Text>
-        <Text style={styles.text}>Predávajúci je právnickou osobou</Text>
+        <Text style={styles.text}>Predávajúci je právnickou alebo fyzickou osobou</Text>
         <Text style={styles.textbold}>1.2.</Text>
         <Text style={styles.text}>
           Predávajúci prehlasuje že je vlastníkom ďalej popisovaného automobilu:
