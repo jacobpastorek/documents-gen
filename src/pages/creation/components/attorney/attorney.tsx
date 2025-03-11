@@ -138,7 +138,7 @@ const Attorney = () => {
             k zriadeniu všetkých potrebných právnych úkonov a zmeny v evidencii na Dopravnom {'\n'}
             inšpektoráte Polície SR
           </Text>{' '}
-          (odhláseniu, prihláseniu a iné zmeny vykoonané na uvedenom{'\n'} motorovom vozidle) na
+          (odhláseniu, prihláseniu a iné zmeny vykonané na uvedenom{'\n'} motorovom vozidle) na
           mojom motorovom vozidle:
         </Text>
 
