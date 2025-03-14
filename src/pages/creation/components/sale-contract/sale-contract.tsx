@@ -138,7 +138,7 @@ const SaleContract = () => {
         <Text style={styles.splittext}>2. Predmet kúpy</Text>
         <Text style={styles.textbold}>2.1.</Text>
         <Text style={styles.textjustified}>
-          Predávajúci týmto predáva Kupujúcemu vyššie uvedený automobil spolu s jeho súčasťamia
+          Predávajúci týmto predáva Kupujúcemu vyššie uvedený automobil spolu s jeho súčasťami a
           {'\n'}
           príslušenstvom za dohodnutú kúpnu cenu a Kupujúci ho týmto od Predávajúceho za{'\n'}
           dohodnutú kúpnu cenu kupuje a príjma do vlastníctva.
@@ -160,9 +160,9 @@ const SaleContract = () => {
           číslom podvozku a číslom motora, že v dobe tejto zmluvy na Automobile neviezne záložné
           alebo zádržné právo, a že Automobil v dobe uzavretia tejto zmluvy nie je predmetom
           laesingu podľa v dobe uzavretia tejto zmluvy platnej, účinnej a doposiaľ neukončenej
-          laesingovej zmluvy.{'\n'}V opačnom prípade je Kupujúci oprávnený od tejto zmluvy odstúpiť.
+          leasingovej zmluvy.{'\n'}V opačnom prípade je Kupujúci oprávnený od tejto zmluvy odstúpiť.
           V prípade odstúpenia odstúpenia od zmluvy Kupujúcim vráti Predávajúci Kupujúcemu kúpnu
-          cenu Automobilu, a to oproti vráteniu Automobilu Kupujpcim predávajúcemu do jeho
+          cenu Automobilu, a to oproti vráteniu Automobilu Kupujúcim predávajúcemu do jeho
           prevádzkarne uvedenej v čl. IX. Všeobecných obchodných podmienok v stave v akom ho od
           Predávajúceho prevzal spolu so všetkým príslušenstvom a súčasťami, s prihliadnutím na
           obvyklé opotrebenie, prípadne ak došlo k odobratiu Automobilu orgánom Policajného zboru SR
@@ -213,7 +213,7 @@ const SaleContract = () => {
         <Text style={styles.textjustified}>
           Kupujúci prehlasuje, že si Automobil a jeho príslušenstvo a súčasti pred ich prevzatím od
           Predávajúceho dôkladne prehliadol a absolvoval s Automobilom skúšobnú jazdu v dĺžke nie
-          kratšej ako päť kilometro. Skúšobnú jazdu je púrávnený Kupujúci vykonať v ľubovolnej dĺžke
+          kratšej ako päť kilometrov. Skúšobnú jazdu je oprávnený Kupujúci vykonať v ľubovolnej dĺžke
           tak, aby s funkčnosťou Automobilu a s jeho technickým stavom mohol riadne zoznámiť.
           Automobil kupuje Kupujúci v stave, ako si ho osobne či prostredníctvom ním určenej osoby
           prehliadol, s vedomím, že sa jedná o automobil použitý, opotrebovaný úmerne veku a
