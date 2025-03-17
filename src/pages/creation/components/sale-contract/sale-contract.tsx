@@ -270,13 +270,12 @@ const SaleContract = () => {
         <Text style={styles.textbold}>7.1.</Text>
         <Text style={styles.textjustified}>
           Táto zmluva je vyhotovená v 2 vyhotoveniach, z ktorých po jednom obdrží každá zo zmluvných
-          strán. Majtel dáva záruku na pôvod vozidla v dobe jedného roka, že automobil nebol búraný,
-          ani neboli stočené kilometre.
+          strán. Majtel dáva záruku na pôvod vozidla v dobe jedného roka.
         </Text>
         <Text style={styles.textbold}>7.2.</Text>
         <Text style={styles.textjustified}>
-          Zmluvné strany prehlasujúp že si túto zmluvu prečítali a že jej rozumejú. Ďalej
-          prehlasujú, že táto zmluva je výrazom ich pravej a slobodnej vôle a že nie ke uzatvorená v
+          Zmluvné strany prehlasujú že si túto zmluvu prečítali a že jej rozumejú. Ďalej
+          prehlasujú, že táto zmluva je výrazom ich pravej a slobodnej vôle a že nie je uzatvorená v
           tiesni, ani za nápadne nevýhodných podmienok. Na dôkaz toho pripájajú svoje podpisy.
         </Text>
         <Text style={styles.textbold}>7.3.</Text>
