@@ -82,7 +82,7 @@ const SaleContract = () => {
         <Text style={styles.title}>KÚPNA ZMLUVA</Text>
         <Text style={styles.textcentered}>
           V súlade s ustanovením §409 a následne zákona č. 513/1991 Zb. Obchodný zákonník v{'\n'}
-          platnom znení uzavretá nižšie uvedeného dňa, meisaca a roku medzi:
+          platnom znení uzavretá nižšie uvedeného dňa, mesiaca a roku medzi:
         </Text>
 
         <View style={styles.flexview}>
@@ -123,7 +123,7 @@ const SaleContract = () => {
         <Text style={styles.text}>Predávajúci je právnickou alebo fyzickou osobou</Text>
         <Text style={styles.textbold}>1.2.</Text>
         <Text style={styles.text}>
-          Predávajúci prehlasuje že je vlastníkom ďalej popisovaného automobilu:
+          Predávajúci prehlasuje, že je vlastníkom ďalej popisovaného automobilu:
           {'\n'}
           a) Typ: {car.type}
           {'\n'}
@@ -141,12 +141,12 @@ const SaleContract = () => {
           Predávajúci týmto predáva Kupujúcemu vyššie uvedený automobil spolu s jeho súčasťami a
           {'\n'}
           príslušenstvom za dohodnutú kúpnu cenu a Kupujúci ho týmto od Predávajúceho za{'\n'}
-          dohodnutú kúpnu cenu kupuje a príjma do vlastníctva.
+          dohodnutú kúpnu cenu kupuje a prijíma do vlastníctva.
         </Text>
         <Text style={styles.splittext}>3. Právny stav predávaného vozidla</Text>
         <Text style={styles.textbold}>3.1.</Text>
         <Text style={styles.textjustified}>
-          Predávajúci prehlasuje že Automobil nemá žiadne právne vady a neviaznu na ňom žiadne
+          Predávajúci prehlasuje, že Automobil nemá žiadne právne vady a neviaznu na ňom žiadne
           finančné záväzky, ktoré by bránili alebo obmedzovali Kupujúceho vo voľnej dispozícií s
           Automobilom a ktoré by bolo treba touto zmluvou zvlášť vysporiadať, či na ktoré by
           kupujúci musel byť upozornený.
@@ -217,7 +217,8 @@ const SaleContract = () => {
           tak, aby s funkčnosťou Automobilu a s jeho technickým stavom mohol riadne zoznámiť.
           Automobil kupuje Kupujúci v stave, ako si ho osobne či prostredníctvom ním určenej osoby
           prehliadol, s vedomím, že sa jedná o automobil použitý, opotrebovaný úmerne veku a
-          najazdeným kilometrom.
+          najazdeným kilometrom. Na kontrole originality existuje záznam o poškodení vozidla, 
+          kupujúci bol o tom oboznámený, laky na aute neprevyšujú hodnotu 130UM.
         </Text>
         <Text style={styles.textbold}>4.2.</Text>
         <Text style={styles.textjustified}>
@@ -270,11 +271,11 @@ const SaleContract = () => {
         <Text style={styles.textbold}>7.1.</Text>
         <Text style={styles.textjustified}>
           Táto zmluva je vyhotovená v 2 vyhotoveniach, z ktorých po jednom obdrží každá zo zmluvných
-          strán. Majtel dáva záruku na pôvod vozidla v dobe jedného roka.
+          strán.
         </Text>
         <Text style={styles.textbold}>7.2.</Text>
         <Text style={styles.textjustified}>
-          Zmluvné strany prehlasujú že si túto zmluvu prečítali a že jej rozumejú. Ďalej
+          Zmluvné strany prehlasujú, že si túto zmluvu prečítali a že jej rozumejú. Ďalej
           prehlasujú, že táto zmluva je výrazom ich pravej a slobodnej vôle a že nie je uzatvorená v
           tiesni, ani za nápadne nevýhodných podmienok. Na dôkaz toho pripájajú svoje podpisy.
         </Text>
